@@ -30,6 +30,7 @@ public class ToolsQATest extends TestBase {
 		System.out.println("chala");
 		boolean status = hmpage.LogoDisplayed();
 		sa.assertTrue(status);
+		System.out.println("just added");
 	}
 
 	@AfterMethod
