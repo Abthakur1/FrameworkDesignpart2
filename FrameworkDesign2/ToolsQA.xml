@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ToolsQATest">
+  <test name="Tools qa Test">
+    <classes>
+     	 <class name="TestCases.ToolsQATest">
+     		 <methods>
+      			<include name = "TC01"/>
+     		</methods>
+     		</class>
+      
+    </classes>
+  </test>
+ 
+</suite>

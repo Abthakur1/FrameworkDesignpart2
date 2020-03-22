@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ToolsQATest" duration-ms="13813" started-at="2020-03-22T13:14:58Z" finished-at="2020-03-22T13:15:11Z">
+    <groups>
+    </groups>
+    <test name="Tools qa Test" duration-ms="13813" started-at="2020-03-22T13:14:58Z" finished-at="2020-03-22T13:15:11Z">
+      <class name="TestCases.ToolsQATest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.ToolsQATest@1c62251]" name="setup" is-config="true" duration-ms="12384" started-at="2020-03-22T13:14:58Z" finished-at="2020-03-22T13:15:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC01()[pri:0, instance:TestCases.ToolsQATest@1c62251]" name="TC01" duration-ms="100" started-at="2020-03-22T13:15:10Z" finished-at="2020-03-22T13:15:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:TestCases.ToolsQATest@1c62251]" name="endTest" is-config="true" duration-ms="1263" started-at="2020-03-22T13:15:10Z" finished-at="2020-03-22T13:15:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- TestCases.ToolsQATest -->
+    </test> <!-- Tools qa Test -->
+  </suite> <!-- ToolsQATest -->
+</testng-results>
