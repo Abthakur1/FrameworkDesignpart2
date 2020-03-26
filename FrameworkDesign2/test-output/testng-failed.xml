@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ToolsQATest]">
+  <listeners>
+    <listener class-name="Reporting.Listners"/>
+  </listeners>
+  <test thread-count="5" name="Tools qa Test(failed)">
+    <classes>
+      <class name="TestCases.ToolsQATest">
+        <methods>
+          <include name="TC03"/>
+          <include name="report"/>
+          <include name="setup"/>
+          <include name="captureStatus"/>
+        </methods>
+      </class> <!-- TestCases.ToolsQATest -->
+    </classes>
+  </test> <!-- Tools qa Test(failed) -->
+</suite> <!-- Failed suite [ToolsQATest] -->
