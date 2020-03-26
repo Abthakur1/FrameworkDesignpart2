@@ -10,14 +10,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import PNCUtilities.Utility;
-
-public class TestBase {
+public class TestBaseWithReport {
 	
 	public static WebDriver driver;
 	public static Properties prop;
 	
-	public TestBase()
+	public TestBaseWithReport()
 	{
 		prop = new Properties();
 		try {
@@ -51,8 +49,8 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("Url"));
-		driver.manage().timeouts().pageLoadTimeout(Utility.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(Utility.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 	}
 	
