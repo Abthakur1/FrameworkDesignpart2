@@ -76,7 +76,7 @@ public class ToolsQATest extends TestBase {
 	{
 		logger = reports.createTest("test case 3");
 		widgetoption.alertTest();
-		sa.assertTrue(false);
+		//sa.assertTrue(false);
 		sa.assertAll();
 		
 		//logger.log(Status.PASS, "alert is handled");
