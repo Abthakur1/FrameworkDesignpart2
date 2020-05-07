@@ -12,7 +12,8 @@ import io.cucumber.junit.CucumberOptions;
 		glue= {"StepDefinitions"},
 		plugin = { "pretty" , "html:test-output/cucumber-reports"},
 		dryRun = false,
-		monochrome = true
+		monochrome = true,
+		tags= {"@Regression,@Smoke"} // regression bhi chalega and smoke bhi chalega "@Regression","@Smoke"-- in this case both tags should be there in the scenrio
 		
 		)
 public class TestRuns {

@@ -112,6 +112,44 @@ public class FlightSite {
 	{
 		driver.quit();
 	}
+	
+	@Given("^user goto url \"(.*)\"$")
+	public void user_goto_url(String url) {
+	   driver.get(url);
+	}
+
+	@Then("^user enters \"(.*)\" and \"(.*)\"$")
+	public void user_enters_and(String un, String pwd) {
+	   driver.findElement(By.name("userName")).sendKeys(un);
+	   driver.findElement(By.name("password")).sendKeys(pwd);
+	}
+
+	@Then("^user click on signin button$")
+	public void user_click_on_signin_button() {
+	    driver.findElement(By.name("login")).click();
+	}
+	@And("^close all$")
+	public void close()
+	{
+		driver.quit();
+	}
+	
+	@Given("smoke given")
+	public void smoke_given() {
+	    System.out.println("smoke given");
+	}
+
+	@When("smoke when")
+	public void smoke_when() {
+	   System.out.println("smoke when");
+	}
+
+	@Then("smoke testing")
+	public void smoke_testing() {
+	    System.out.println("smoke then");
+	}
+
+
 
 
 
